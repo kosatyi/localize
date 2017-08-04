@@ -1,19 +1,21 @@
 <h1 align="center">
-  <a href="https://ipsp-php.com">
-      <img src="https://i.imgur.com/0ggpWvt.png" alt="MongoDB Logo" width="456" height="250"></a>
+  <a href="https://kosatyi.com">
+      <img src="http://i.imgur.com/IcEVJc6.png" alt="Localize Logo" width="250"></a>
   <br>
-  Mango-PHP
+  Localize
   <br>
 </h1>
 
+
+
 <h4 align="center">
-MongoDB Models 
+PHP GetText translation generator from project files 
 </h4>
 
 <p align="center">
-<a href="https://packagist.org/packages/kosatyi/mango-php"><img src="https://poser.pugx.org/kosatyi/mango-php/version" /></a>
-<a href="https://packagist.org/packages/kosatyi/mango-php"><img src="https://poser.pugx.org/kosatyi/mango-php/downloads"/></a>
-<a href="https://packagist.org/packages/kosatyi/mango-php"><img src="https://poser.pugx.org/kosatyi/mango-php/license" /></a>
+<a href="https://packagist.org/packages/kosatyi/localize"><img src="https://poser.pugx.org/kosatyi/localize/version" /></a>
+<a href="https://packagist.org/packages/kosatyi/localize"><img src="https://poser.pugx.org/kosatyi/localize/downloads"/></a>
+<a href="https://packagist.org/packages/kosatyi/localize"><img src="https://poser.pugx.org/kosatyi/localize/license" /></a>
 </p>
 
 ## Installation
@@ -26,7 +28,7 @@ PHP 5.4 and later.
 
 Localize require the following extension in order to work properly:
 
-- [`mongodb`](https://secure.php.net/manual/en/book.mongodb.php)
+- [`gettext`](http://php.net/manual/en/gettext.installation.php)
 
 
 ### Install with Composer
