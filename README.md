@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://kosatyi.com">
-      <img src="https://i.imgur.com/sbmTP8q.png" alt="Localize Logo" width="250"></a>
+      <img src="https://i.imgur.com/sbmTP8q.png" alt="Localize Logo"></a>
   <br>
   Localize
   <br>
