@@ -6,8 +6,6 @@
   <br>
 </h1>
 
-
-
 <h4 align="center">
 PHP Gettext translation generator from project files 
 </h4>
