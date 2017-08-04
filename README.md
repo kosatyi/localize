@@ -45,7 +45,20 @@ Or add dependency manually in `composer.json`
     "kosatyi/localize":"^1.0"
   }
 }
-
 ```
+
+### Basic Usage
+
+```php
+require 'vendor/autoload.php';
+use Kosatyi\Localize\Parser;
+$localize = new Parser(array(
+    'target'  => '.locales',
+    'sources' => array('./src','./templates'),
+    'locales' => array('en','ru')
+));
+$localize->initialize();
+```
+
 
 
