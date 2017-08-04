@@ -1,0 +1,21 @@
+{
+  "name": "kosatyi/localize",
+  "description": "Gettext translation files generator",
+  "homepage": "https://kosatyi.com/",
+  "license": "MIT",
+  "version": "v1.0.0",
+  "authors": [
+    {
+      "name": "Stepan Kosatyi",
+      "email": "stepan@kosatyi.com"
+    }
+  ],
+  "require": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "Kosatyi\\Localize\\": "src/"
+    }
+  }
+}
