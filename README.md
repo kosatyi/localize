@@ -9,7 +9,7 @@
 
 
 <h4 align="center">
-PHP GetText translation generator from project files 
+PHP Gettext translation generator from project files 
 </h4>
 
 <p align="center">
