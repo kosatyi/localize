@@ -16,6 +16,8 @@ baseurl: /localize
 
 navigation: false
 
+projects: true
+
 title: Localize
 description: PHP Gettext translation generator from project files
 logo: https://i.imgur.com/sbmTP8q.png
