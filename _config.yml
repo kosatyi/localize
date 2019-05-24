@@ -1,0 +1,26 @@
+plugins:
+  - jekyll-seo-tag
+
+port: 4001
+
+styles:
+
+remote_theme: kosatyi/sjt
+
+exclude:
+  - vendor
+
+javascript:
+
+baseurl: /localize
+
+navigation: false
+
+title: Localize
+description: PHP Gettext translation generator from project files
+
+author:
+  name: Stepan Kosatyi
+  url: http://www.kosatyi.com/
+
+toolbar:
