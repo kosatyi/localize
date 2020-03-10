@@ -1,12 +1,7 @@
 remote_theme: kosatyi/sjt
-exclude:
-  - vendor
-  - node_modules
-  - src
 
 navigation: false
 projects: true
-
 
 baseurl: /localize
 
