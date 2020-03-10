@@ -7,14 +7,12 @@ exclude:
 navigation: false
 projects: true
 
-<<<<<<< HEAD
+
 baseurl: /localize
-=======
->>>>>>> 3ebf385faeb892547d17e1c56ae1307ef371004e
+
 brand: localize
 title: Localize
 description: PHP Gettext translation generator from project files
-logo: https://i.imgur.com/sbmTP8q.png
 
 author:
   name: Stepan Kosatyi
