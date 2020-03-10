@@ -8,7 +8,3 @@ baseurl: /localize
 brand: localize
 title: Localize
 description: PHP Gettext translation generator from project files
-
-author:
-  name: Stepan Kosatyi
-  url: http://www.kosatyi.com/
