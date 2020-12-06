@@ -8,11 +8,9 @@ baseurl: /localize
 brand: localize
 title: Localize
 description: PHP Gettext translation generator from project files
-<<<<<<< HEAD
 logo: https://i.imgur.com/sbmTP8q.png
 analytics: UA-37629144-1
-=======
->>>>>>> 9b322490ff735cc32753c22b13f6c4d38d307a30
+
 
 author:
   name: Stepan Kosatyi
