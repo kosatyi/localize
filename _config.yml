@@ -1,32 +1,19 @@
-plugins:
-  - jekyll-seo-tag
-
-port: 4001
-
-styles:
-
 remote_theme: kosatyi/sjt
 
-exclude:
-  - vendor
-  - src
-
-javascript:
+navigation: false
+projects: true
 
 baseurl: /localize
-
-navigation: false
-
-projects: true
 
 brand: localize
 title: Localize
 description: PHP Gettext translation generator from project files
+<<<<<<< HEAD
 logo: https://i.imgur.com/sbmTP8q.png
 analytics: UA-37629144-1
+=======
+>>>>>>> 9b322490ff735cc32753c22b13f6c4d38d307a30
 
 author:
   name: Stepan Kosatyi
-  url: http://www.kosatyi.com/
-
-toolbar:
+  url: https://kosatyi.com/
