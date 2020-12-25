@@ -8,7 +8,6 @@ baseurl: /localize
 brand: localize
 title: Localize
 description: PHP Gettext translation generator from project files
-logo: https://i.imgur.com/sbmTP8q.png
 analytics: UA-37629144-1
 
 author:
