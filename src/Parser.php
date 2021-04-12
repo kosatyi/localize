@@ -74,7 +74,7 @@ class Parser {
 
     protected function createPotFile($potfile){
         $files   = join(' ',$this->files);
-        $command = sprintf('xgettext --force-po --from-code=UTF-8 -o %s %s',$potfile,$files);
+        $command = sprintf('xgettext --omit-header --force-po --from-code=UTF-8 -o %s %s',$potfile,$files);
         $this->execute($command);
     }
 
