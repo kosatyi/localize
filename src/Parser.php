@@ -2,6 +2,11 @@
 
 namespace Kosatyi\Localize;
 
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use RecursiveRegexIterator;
+use RegexIterator;
+
 class Parser {
 
     private $type    = 'LC_MESSAGES';
@@ -16,9 +21,11 @@ class Parser {
         'sources' => array('.'),
         'locales' => array('en')
     );
+
     public function __construct( $options = array() ){
         $this->options = array_merge($this->options,$options);
     }
+
     public function initialize(){
         foreach($this->options['locales'] as $locale)
         {
@@ -30,6 +37,7 @@ class Parser {
         }
         return $this->generate();
     }
+
     protected function findFiles($directory){
         $directory = new RecursiveDirectoryIterator($directory);
         $iterator  = new RecursiveIteratorIterator($directory);
@@ -39,11 +47,13 @@ class Parser {
             $this->files[] = $item[0];
         }
     }
+
     protected function createDirectory($structure){
         if(is_dir($structure)) return(TRUE);
         if(!mkdir($structure, 0777, true))
-            die('directory create fail');
+            die(sprintf('directory create fail: %s',$structure));
     }
+
     public function generate(){
         $domain = $this->domain;
         $this->output = array();
@@ -61,11 +71,13 @@ class Parser {
         }
         return $this->output;
     }
+
     protected function createPotFile($potfile){
         $files   = join(' ',$this->files);
         $command = sprintf('xgettext --force-po --from-code=UTF-8 -o %s %s',$potfile,$files);
         $this->execute($command);
     }
+
     protected function mergePoFile($pofile,$potfile){
         if(!file_exists($pofile)){
             $command = sprintf('cp %s %s',$potfile,$pofile);
@@ -74,14 +86,17 @@ class Parser {
         }
         $this->execute($command);
     }
+
     protected function compileMoFile($pofile,$mofile){
         $command = sprintf('msgfmt %s -o %s',$pofile,$mofile);
         $this->execute($command);
     }
+
     protected function removePotFile($potfile){
         $command = sprintf('rm -f %s',$potfile);
         $this->execute($command);
     }
+
     protected function execute( $command ){
         $output = shell_exec( $command );
         $this->output[] = array($command,$output);
